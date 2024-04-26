@@ -51,8 +51,6 @@ services:
       - MYSQL_ROOT_PASSWORD=root
       - FILE_PATH_TO_CHECK=./Dockerfile
 
-    # Montage du volume nommé db_data dans le service
-    # sur chaque container qui le compose
     volumes:
       - db_data:/app/bdd.db
 
